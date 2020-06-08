@@ -39,7 +39,7 @@ object App {
     spark.stop()
   }
 
-  def getEnglishName: (String => String) = { s => s.split(" ")(0) }
+  def getEnglishName: (String => String) = { s => s.split(" \\(")(0) }
 
   def getStartYear: (String => String) = { s => s.split("-")(0).replace("(", "") }
 
